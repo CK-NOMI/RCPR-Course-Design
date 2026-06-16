@@ -1,0 +1,28 @@
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 敏感信息
+密码.txt
+*.pid
+
+# 数据与运行产物
+datasets/
+predictions/
+web_runs/
+web_outputs/
+web_logs/
+exp_logs/
+aqua20_logs/
+vis_compare/
+
+# 调试日志
+*_debug_*.txt
+
+# 权重:默认全部忽略,只保留当前推理实际使用的
+# (注意:不要再写 checkpoints/ 或 models/ 整目录忽略,否则下面的反选会失效)
+*.pt
+*.pth
+*.ckpt
+!models/dino_vitbase8_pretrain.pth
+!checkpoints/baseline运行出的checkpoints/model_combo_base8-136_0.7291838924090067.pt
